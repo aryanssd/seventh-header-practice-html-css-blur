@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Shippori Antique', sans-serif;
+}
+
+.header{
+    background-color: gray;
+    height: 100vh;
+}
+
+.video-box{
+    width: 100%;
+    height: 100%;
+}
+
+.video-box video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container{
+    padding: 0 100px;
+}
+
+.container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    backdrop-filter: blur(9px);
+}
+
+.navbar{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: #ffffff;
+    font-size: 28px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.list{
+    position: relative;
+    display: flex;
+}
+
+.list li{
+    list-style: none;
+    margin: 0 25px;
+}
+
+.list li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    position: relative;
+    transition: all 0.4s ;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+.list li a:hover{
+    background-color: #ffffff;
+    color: black;
+    border-radius: 5px;
+}
+
+.txt-box{
+    width: 40%;
+    position: absolute;
+    top: 30%;
+
+
+}
+
+.title{
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.praph{
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.btn{
+    height: 54px;
+    width: 140px;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    transition: all 0.4s ;
+}
+
+.btn:hover{
+    background-color: #ffffff;
+    color: black;
+}
